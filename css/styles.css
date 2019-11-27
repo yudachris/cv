@@ -1,0 +1,18 @@
+body{
+    margin:auto;
+    padding:10px;
+}
+
+
+.profpic{
+    height: 250px;
+    width: 250px;
+    border: solid rgba(128, 128, 128, 0.5) 1px;
+    border-radius: 50%;
+}
+
+.profpic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
