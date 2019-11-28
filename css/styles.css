@@ -1,18 +1,53 @@
 body{
-    margin:auto;
-    padding:10px;
+    background-color: #f9f7f7;
+    margin:0;
+    text-align:center;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1{
+    margin-top:0px;
+    font-family: 'Over the Rainbow', cursive, sans-serif;
+    font-size: 5rem;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heavy-text{
+    text-shadow: 1px 1px 2px darkgray;
 }
 
 
-.profpic{
+.top-container{
+    background-color: #dbe2ef;
+    padding-top:100px;
+    position:relative;
+}
+
+.profile-picture{
+    border-radius:50%;
     height: 250px;
     width: 250px;
-    border: solid rgba(128, 128, 128, 0.5) 1px;
-    border-radius: 50%;
 }
 
-.profpic img{
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
+.top-cloud{
+    position:absolute;
+    right:300px;
+    top:50px;
+}
+
+.bottom-cloud{
+    position:absolute;
+    left:300px;
+    bottom:300px;
+}
+
+.middle-container{
+
+}
+
+.bottom-container{
+
 }
