@@ -1,0 +1,148 @@
+body{
+    background-color: #f9f7f7;
+    margin:0;
+    text-align:center;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1{
+    margin:50px auto 0 auto;
+    font-family: 'Over the Rainbow', cursive, sans-serif;
+    font-size: 5rem;
+    color:#3f72af;
+    line-height: 2;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size:2.5rem;
+    color:#3f72af;
+}
+
+h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    color:#2d5483;
+}
+
+p{
+    font-size:1.2rem;
+}
+
+a{
+    color:#2d5483;
+}
+
+.heavy-text{
+    text-shadow: 2px 2px 4px darkgray;
+}
+
+
+.top-container{
+    background-color: #dbe2ef;
+    padding-top:100px;
+    position:relative;
+}
+
+.profile-picture{
+    border-radius:50%;
+    height: 250px;
+    width: 250px;
+}
+
+.top-cloud{
+    position:absolute;
+    right:300px;
+    top:50px;
+}
+
+.bottom-cloud{
+    position:absolute;
+    left:300px;
+    bottom:300px;
+}
+
+hr{
+    border: dotted 10px rgba(150,150,150,0.3);
+    border-bottom:none;
+    width: 5%;
+    margin: 100px auto 100px auto;
+}
+
+.middle-container{
+    padding-top:75px;
+}
+
+.middle-container .profile p{
+    width: 50%;
+    margin: auto;
+    line-height:2;
+}
+
+.bottom-container{
+    background-color:#3f72af;
+    padding: 30px;
+}
+
+.footer-link{
+    color: #112d4e;
+    font-weight:bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin:20px;
+}
+
+.footer-link:hover{
+    color:white;
+}
+
+.cr-text{
+    color:#f9f7f7;
+}
+
+.computer-img{
+    float:left;
+    margin-right:30px;
+    border-radius: 50%;
+}
+
+.dance-img{
+    float:right;
+    margin-left:30px;
+    border-radius: 50%;
+    border: solid 1px rgba(150,150,150,0.3);
+    background-color: rgba(150,150,150,0.3);
+}
+
+.skill-row{
+    width:50%;
+    margin:100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.skill-row img{
+    width: 20%;
+}
+
+.contact-me{
+    margin: 100px auto 100px;
+    
+}
+
+.contact-me p{
+    margin:30px auto 60px;
+    width: 30%;
+}
+
+.contact-me .btn{
+    color:#f9f7f7;
+    background: linear-gradient(#3f72af ,#7a94b4);
+    padding: 15px;
+    border-radius:7px;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.contact-me .btn:hover{
+    background: linear-gradient(#2670d1 ,#92accf);
+}
