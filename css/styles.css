@@ -11,6 +11,7 @@ $breakpoint arguement choices:
 - tab-land
 - big-desktop
 
+1em = 16px;
 */
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
 .heading-primary {
@@ -45,16 +46,16 @@ $breakpoint arguement choices:
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 600px) {
-    html {
-      font-size: 35%; } }
-  @media (max-width: 900px) {
-    html {
-      font-size: 40%; } }
-  @media (max-width: 1200px) {
+  @media (max-width: 85.375em) {
     html {
       font-size: 50%; } }
-  @media (min-width: 1800px) {
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 40%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 35%; } }
+  @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
 
