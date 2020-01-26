@@ -4,7 +4,7 @@
   "description": "My Portfolio Site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yudachris/cv/issues"
   },
-  "homepage": "https://github.com/yudachris/cv#readme"
+  "homepage": "https://github.com/yudachris/cv#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
 }
