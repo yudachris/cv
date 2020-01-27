@@ -1,11 +1,13 @@
 /*
 
-0 - 600px : phone;
+0 - 320px : Small phones;
+320 - 600px : phone;
 600 - 900px : Tablet portrait;
 900 - 1200px : Tablet landscape;
 1920px + : big desktop;
 
 $breakpoint arguement choices:
+- phone-s
 - phone
 - tab-port
 - tab-land
@@ -55,6 +57,9 @@ html {
   @media (max-width: 37.5em) {
     html {
       font-size: 35%; } }
+  @media (max-width: 20em) {
+    html {
+      font-size: 25%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -95,9 +100,11 @@ body {
     position: absolute;
     bottom: .5vh;
     left: .5vw;
+    font-size: 1rem;
     font-weight: 600;
-    padding: .5rem;
-    color: #222831; }
+    padding: .2rem;
+    color: #222831;
+    border-bottom: solid 1px #3f72af; }
 
 .section-about {
   height: 100vh; }
