@@ -16,28 +16,92 @@ $breakpoint arguement choices:
 1em = 16px;
 */
 @import url("https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,700i|PT+Sans&display=swap");
-@keyframes landing {
-  0% {
-    filter: blur(3px); }
-  60% {
-    filter: blur(6px); }
-  100% {
-    filter: blur(0px); } }
+.navigation {
+  background-color: rgba(219, 226, 239, 0.4);
+  display: none; }
+
+.parallax::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.6);
+  z-index: -1; }
+
+.header__text-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 5vw; }
+
+.header__location-box {
+  position: absolute;
+  bottom: .5vh;
+  left: .5vw;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: .2rem;
+  color: #222831;
+  border-bottom: solid 1px #3f72af; }
+
+.section-about__photo img {
+  width: 30rem;
+  border-radius: 50%; }
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  -moz-perspective: 2px;
+  -ms-perspective: 2px; }
+
+.header {
+  height: 100vh;
+  position: relative; }
+
+.section-about {
+  min-height: 100vh;
+  background-color: #fff; }
+
+.section-bandung {
+  padding: 4rem;
+  position: relative; }
+
+.section-tokyo {
+  height: 100vh;
+  position: relative; }
+
+.bg-yuda::after {
+  background: linear-gradient(to right bottom, rgba(63, 114, 175, 0.4), rgba(145, 109, 213, 0.4)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top; }
+
+.bg-tokyo::after {
+  background: linear-gradient(to right bottom, rgba(63, 114, 175, 0.4), rgba(145, 109, 213, 0.4)), url(../img/tokyo.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.footer {
+  height: 50vh;
+  background-color: #112d4e; }
 
 @keyframes landing-text-top {
   0% {
-    transform: translateX(-50%);
+    transform: translateY(-20%) translateX(-20%) rotate(-5deg);
     opacity: 0; }
   100% {
-    transform: translateX(0);
+    transform: translateY(0) translateX(0) rotate(0);
     opacity: 1; } }
 
 @keyframes landing-text-bottom {
   0% {
-    transform: translateX(-50%);
+    transform: translateY(-20%) translateX(-20%) rotate(-5deg);
     opacity: 0; }
   100% {
-    transform: translateX(0);
+    transform: translateY(0) translateX(0) rotate(0);
     opacity: 1; } }
 
 .heading-primary {
@@ -50,13 +114,11 @@ $breakpoint arguement choices:
     margin-bottom: -3vw;
     display: block;
     text-align: right;
-    animation: landing-text-top 1.3s ease 1s;
-    animation-fill-mode: backwards; }
+    animation: landing-text-top 1.3s ease; }
   .heading-primary--bottom {
     display: block;
     text-align: right;
-    animation: landing-text-bottom 1.5s ease 1s;
-    animation-fill-mode: backwards; }
+    animation: landing-text-bottom 1.5s ease; }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -98,50 +160,3 @@ h1, h2, h3, h4, h5 {
 
 p {
   font-family: "PT Sans", sans-serif; }
-
-body {
-  overflow-x: hidden; }
-
-.section-bandung {
-  padding: 4rem; }
-
-.section-tokyo {
-  height: 100vh;
-  background: linear-gradient(to right bottom, rgba(63, 114, 175, 0.4), rgba(145, 109, 213, 0.4)), url(../img/tokyo.jpg);
-  background-size: cover;
-  background-position: center; }
-
-.navigation {
-  background-color: rgba(219, 226, 239, 0.4);
-  display: none; }
-
-.row {
-  max-width: 95vw; }
-
-.header {
-  height: 100vh;
-  background: linear-gradient(to right bottom, rgba(63, 114, 175, 0.4), rgba(145, 109, 213, 0.4)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  animation: landing 3s ease; }
-  .header__text-box {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-right: 5vw; }
-  .header__location-box {
-    position: absolute;
-    bottom: .5vh;
-    left: .5vw;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: .2rem;
-    color: #222831;
-    border-bottom: solid 1px #3f72af; }
-
-.section-about {
-  min-height: 100vh; }
-  .section-about__photo img {
-    width: 30rem;
-    border-radius: 50%; }
