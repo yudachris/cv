@@ -27,7 +27,7 @@ $breakpoint arguement choices:
   right: 0;
   bottom: 0;
   left: 0;
-  transform: translateZ(-1px) scale(1.6);
+  transform: translateZ(-1px) scale(1.55);
   z-index: -1; }
 
 .header__text-box {
@@ -48,7 +48,15 @@ $breakpoint arguement choices:
 
 .section-about__photo img {
   width: 30rem;
-  border-radius: 50%; }
+  border-radius: 50%;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(34, 40, 49, 0.5); }
+
+.section-about__greeting {
+  margin: 2rem auto; }
+
+.section-about__text {
+  width: 35rem;
+  margin: 2rem auto; }
 
 .wrapper {
   height: 100vh;
@@ -64,7 +72,9 @@ $breakpoint arguement choices:
 
 .section-about {
   min-height: 100vh;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 25rem 20rem;
+  text-align: center; }
 
 .section-bandung {
   padding: 4rem;
@@ -85,7 +95,7 @@ $breakpoint arguement choices:
   background-position: center; }
 
 .footer {
-  height: 50vh;
+  height: 35vh;
   background-color: #112d4e; }
 
 @keyframes landing-text-top {
