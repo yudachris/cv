@@ -58,6 +58,33 @@ $breakpoint arguement choices:
   width: 35rem;
   margin: 2rem auto; }
 
+.bandung-education {
+  text-align: center; }
+  .bandung-education__panel {
+    padding: 2rem;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(34, 40, 49, 0.8);
+    border-radius: 3px;
+    transition: transform .2s;
+    display: grid;
+    grid-template-columns: 1fr 6fr; }
+    .bandung-education__panel:hover {
+      transform: translateY(-0.4rem); }
+  .bandung-education__panel:not(:last-child) {
+    margin-bottom: 2rem; }
+
+.education-image {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(34, 40, 49, 0.8);
+  border-radius: 50%; }
+
+.education-text {
+  text-align: left;
+  padding-left: 2rem; }
+
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
@@ -77,11 +104,16 @@ $breakpoint arguement choices:
   text-align: center; }
 
 .section-bandung {
+  min-height: 100vh;
   padding: 4rem;
   position: relative; }
 
+.section-transition {
+  min-height: 100vh;
+  background-color: #fff; }
+
 .section-tokyo {
-  height: 100vh;
+  min-height: 100vh;
   position: relative; }
 
 .bg-yuda::after {
@@ -91,6 +123,11 @@ $breakpoint arguement choices:
 
 .bg-tokyo::after {
   background: linear-gradient(to right bottom, rgba(63, 114, 175, 0.4), rgba(145, 109, 213, 0.4)), url(../img/tokyo.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.bg-bandung::after {
+  background: linear-gradient(to right bottom, rgba(63, 114, 175, 0.4), rgba(145, 109, 213, 0.4)), url(../img/bandung.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -114,27 +151,56 @@ $breakpoint arguement choices:
     transform: translateY(0) translateX(0) rotate(0);
     opacity: 1; } }
 
-.heading-primary {
+.title {
   font-size: 6.8vw;
   text-transform: uppercase;
   font-weight: 700;
   color: #112d4e;
   text-shadow: 0.25rem 0.25rem rgba(34, 40, 49, 0.5); }
-  .heading-primary--top {
+  .title--top {
     margin-bottom: -3vw;
     display: block;
     text-align: right;
     animation: landing-text-top 1.3s ease; }
-  .heading-primary--bottom {
+  .title--bottom {
     display: block;
     text-align: right;
     animation: landing-text-bottom 1.5s ease; }
+
+.heading-primary {
+  font-size: 7rem;
+  color: #112d4e;
+  text-shadow: 0.25rem 0.25rem rgba(34, 40, 49, 0.5); }
+
+.heading-secondary {
+  font-size: 5rem;
+  color: #112d4e;
+  text-shadow: 0.25rem 0.25rem rgba(34, 40, 49, 0.5);
+  margin: 3rem; }
 
 .paragraph {
   font-size: 1.6rem; }
 
 .u-text-italic {
   font-style: italic; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 3rem; }
+
+.u-margin-bottom-lg {
+  margin-bottom: 4.5rem; }
+
+.u-margin-top-sm {
+  margin-top: 1.5rem; }
+
+.u-margin-top-md {
+  margin-top: 3rem; }
+
+.u-margin-top-lg {
+  margin-top: 4.5rem; }
 
 *, *::before, *::after {
   margin: 0;
@@ -170,3 +236,7 @@ h1, h2, h3, h4, h5 {
 
 p {
   font-family: "PT Sans", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
