@@ -8,16 +8,23 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/icon-font.css">
   <link rel="icon" href="img/icons/yuda.ico">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <title>Yehuda C. Nathanael</title>
 </head>
-
 <body>
   <!--
     Ideas*
     Create navbar. each to jumpt to each section. also to change language put english and japanese flags.
   -->
   <div class="wrapper">
-    <nav class="navigation"> <!-- currently not displayed-->
+    <div class="loader-wrapper">
+      <div class="loader-casing">
+        <div class="loader-content"></div>
+      </div>
+    </div>
+    <nav class="navigation">
+      <!-- currently not displayed-->
       <div class="navigation__menu">
         <a href="#" class="navigation__menu navigation__menu--1">About Me</a>
         <a href="#" class="navigation__menu navigation__menu--2">My Work</a>
@@ -44,7 +51,8 @@
         <h2>Hello. Good to see you!</h2>
       </div>
       <div class="section-about__text">
-        <p>My name is Yehuda Nathanael and I am a front-end web developer. I'm originally came from Bandung, Indonesia and currently living and working in Tokyo, Japan.</p>
+        <p>My name is Yehuda Nathanael and I am a front-end web developer. I'm originally came from Bandung, Indonesia
+          and currently living and working in Tokyo, Japan.</p>
       </div>
     </main>
 
@@ -96,9 +104,14 @@
     </section>
 
     <footer class="footer">
-
+  
     </footer>
   </div>
+ <script>
+      $(window).on("load", function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
+  </script>
 </body>
 
 </html>

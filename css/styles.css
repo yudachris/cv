@@ -30,6 +30,19 @@ $breakpoint arguement choices:
   transform: translateZ(-1px) scale(1.55);
   z-index: -1; }
 
+.loader-wrapper {
+  height: 100vh;
+  background-color: #112d4e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .header__text-box {
   position: absolute;
   bottom: 0;
@@ -84,14 +97,6 @@ $breakpoint arguement choices:
 .education-text {
   text-align: left;
   padding-left: 2rem; }
-
-.wrapper {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
-  -moz-perspective: 2px;
-  -ms-perspective: 2px; }
 
 .header {
   height: 100vh;
@@ -240,3 +245,12 @@ p {
 a {
   text-decoration: none;
   color: inherit; }
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  -moz-perspective: 2px;
+  -ms-perspective: 2px;
+  position: relative; }
