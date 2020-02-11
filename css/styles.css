@@ -108,7 +108,7 @@ $breakpoint arguement choices:
   text-align: center; }
   .bandung-education__panel {
     padding: 2rem;
-    width: 75%;
+    width: 65%;
     background-color: rgba(255, 255, 255, 0.8);
     margin: 0 auto;
     box-shadow: 0.5rem 0.5rem 1rem rgba(34, 40, 49, 0.8);
@@ -122,14 +122,26 @@ $breakpoint arguement choices:
     margin-bottom: 2rem; }
 
 .education-image {
-  width: 100%;
+  width: 15rem;
+  height: 15rem;
   margin: 0 auto;
   box-shadow: 0.5rem 0.5rem 1rem rgba(34, 40, 49, 0.8);
-  border-radius: 50%; }
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover; }
+  .education-image--1 {
+    background-image: url(../img/bpkpenabur.jpg); }
+  .education-image--2 {
+    background-image: url(../img/ithb.jpg); }
+  .education-image--3 {
+    background-image: url(../img/akinosora.jpg); }
 
 .education-text {
   text-align: left;
   padding-left: 2rem; }
+  .education-text__details > a {
+    color: #3f72af;
+    border-bottom: solid #3f72af 1px; }
 
 .header {
   height: 100vh;
