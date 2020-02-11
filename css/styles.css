@@ -43,6 +43,39 @@ $breakpoint arguement choices:
   justify-content: center;
   align-items: center; }
 
+.loader-casing {
+  width: 6rem;
+  height: 6rem;
+  border: solid #3f72af 0.5rem;
+  animation: loading 2s ease-in infinite;
+  overflow: hidden; }
+
+.loader-content {
+  width: 50%;
+  height: 100%;
+  background-color: #dbe2ef;
+  animation: loading-bar 2s linear infinite; }
+
+@keyframes loading {
+  0% {
+    border-radius: 0;
+    transform: rotate(0); }
+  50% {
+    border-radius: 50%;
+    transform: rotate(180deg); }
+  80% {
+    border-radius: 3px;
+    transform: rotate(360deg); }
+  100% {
+    border-radius: 0;
+    transform: rotate(360deg); } }
+
+@keyframes loading-bar {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
 .header__text-box {
   position: absolute;
   bottom: 0;
