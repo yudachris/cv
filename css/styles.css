@@ -80,7 +80,16 @@ $breakpoint arguement choices:
   position: absolute;
   bottom: 0;
   right: 0;
-  padding-right: 5vw; }
+  padding-right: 5vw;
+  transition: all .3s; }
+  @media (max-width: 37.5em) {
+    .header__text-box {
+      bottom: 57%;
+      right: 0; } }
+  @media (max-width: 20em) {
+    .header__text-box {
+      bottom: 57%;
+      right: 0; } }
 
 .header__location-box {
   position: absolute;
@@ -118,6 +127,14 @@ $breakpoint arguement choices:
     grid-template-columns: 1fr 6fr; }
     .bandung-education__panel:hover {
       transform: translateY(-0.4rem); }
+    @media (max-width: 37.5em) {
+      .bandung-education__panel {
+        padding: 1.5rem;
+        width: 100%; } }
+    @media (max-width: 20em) {
+      .bandung-education__panel {
+        padding: 1.5rem;
+        width: 100%; } }
   .bandung-education__panel:not(:last-child) {
     margin-bottom: 2rem; }
 
