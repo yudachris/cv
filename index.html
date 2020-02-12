@@ -10,28 +10,26 @@
   <link rel="icon" href="img/icons/yuda.ico">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  
   <title>Yehuda C. Nathanael</title>
 </head>
 
 <body>
-  <!--
+  <div class="loader-wrapper">
+    <div class="loader-casing">
+      <div class="loader-content"></div>
+    </div>
+  </div>
+  <nav class="navigation">
+      <a class="navigation__menu" id="edu">Educational Background</a>
+      <a class="navigation__menu" id="exp">Work Experience</a>
+      <a class="navigation__menu" id="con">Contact Me</a>
+  </nav>
+  <div class="wrapper">
+    <!--
     Ideas*
     Create navbar. each to jumpt to each section. also to change language put english and japanese flags.
-  -->
-  <div class="wrapper">
-    <div class="loader-wrapper">
-      <div class="loader-casing">
-        <div class="loader-content"></div>
-      </div>
-    </div>
-    <nav class="navigation">
-      <!-- currently not displayed-->
-      <div class="navigation__menu">
-        <a href="#" class="navigation__menu navigation__menu--1">About Me</a>
-        <a href="#" class="navigation__menu navigation__menu--2">My Work</a>
-        <a href="#" class="navigation__menu navigation__menu--3">Contact Me</a>
-      </div>
-    </nav>
+    -->
     <header class="header bg-yuda parallax">
       <div class="header__text-box">
         <h1 class="title">
@@ -57,7 +55,7 @@
       </div>
     </main>
 
-    <section class="section-bandung bg-bandung parallax">
+    <section class="section-bandung bg-bandung parallax" id="section-education">
       <div class="bandung-education">
         <h2 class="heading-secondary">
           Educational Background
@@ -101,12 +99,12 @@
 
     </section>
 
-    <section class="section-tokyo bg-tokyo parallax">
+    <section class="section-tokyo bg-tokyo parallax" id="section-work-experience">
 
 
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="section-contact">
 
     </footer>
   </div>
@@ -115,6 +113,7 @@
       $(".loader-wrapper").fadeOut("slow");
     });
   </script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

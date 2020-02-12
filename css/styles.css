@@ -17,8 +17,28 @@ $breakpoint arguement choices:
 */
 @import url("https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,700i|PT+Sans&display=swap");
 .navigation {
-  background-color: rgba(219, 226, 239, 0.4);
-  display: none; }
+  position: absolute;
+  padding: 2rem 4rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10; }
+  .navigation__menu {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    color: #dbe2ef;
+    text-shadow: 0.1rem 0.1rem 0.2rem #3f72af;
+    cursor: pointer;
+    transition: all .2s;
+    -moz-transition: all .2s; }
+    .navigation__menu:not(:last-child) {
+      margin-right: 2rem; }
+    .navigation__menu:hover {
+      text-shadow: 0.1rem 0.1rem 0.3rem rgba(219, 226, 239, 0.8);
+      transform: translateY(-2.5px);
+      -moz-transform: translateY(-2.5px); }
 
 .parallax::after {
   content: "";
@@ -75,6 +95,22 @@ $breakpoint arguement choices:
     width: 0%; }
   100% {
     width: 100%; } }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
 
 .header__text-box {
   position: absolute;
