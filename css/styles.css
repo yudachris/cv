@@ -15,7 +15,8 @@ $breakpoint arguement choices:
 
 1em = 16px;
 */
-@import url("https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,700i|PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
 .navigation {
   position: absolute;
   padding: 2rem 4rem;
@@ -98,7 +99,7 @@ $breakpoint arguement choices:
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px; }
+  width: 1rem; }
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -111,6 +112,101 @@ $breakpoint arguement choices:
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; }
+
+.panel {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  border: 1px solid rgba(119, 119, 119, 0.8);
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.8); }
+  @media (max-width: 37.5em) {
+    .panel {
+      width: 95%; } }
+  @media (max-width: 20em) {
+    .panel {
+      width: 97.5%; } }
+  .panel__title {
+    text-align: center;
+    padding: 2rem; }
+  .panel__content {
+    font-family: "Alata", sans-serif;
+    border-top: 1px solid rgba(119, 119, 119, 0.5);
+    padding: 2rem; }
+    .panel__content .content__header {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .panel__content .content__header-image {
+        text-align: center;
+        overflow: hidden;
+        margin-right: 2rem;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 1rem rgba(119, 119, 119, 0.5);
+        transition: all .2s;
+        position: relative; }
+        .panel__content .content__header-image img {
+          width: 100%;
+          transition: all .2s; }
+        .panel__content .content__header-image .image-link {
+          opacity: 0;
+          visibility: hidden;
+          width: 100%;
+          position: absolute;
+          z-index: 40;
+          font-size: 1.5rem;
+          transition: all .2s;
+          color: #222831;
+          text-shadow: 0 0 0.1rem #222831; }
+        .panel__content .content__header-image:hover {
+          box-shadow: 0 0 2rem rgba(119, 119, 119, 0.5);
+          cursor: pointer; }
+          .panel__content .content__header-image:hover img {
+            transform: scale(0.9);
+            filter: blur(2px); }
+          .panel__content .content__header-image:hover .image-link {
+            opacity: 1;
+            visibility: visible; }
+      .panel__content .content__header-text {
+        max-width: 70%; }
+        .panel__content .content__header-text .institution {
+          font-size: 3rem;
+          font-weight: 700; }
+        .panel__content .content__header-text .role {
+          font-size: 1.6rem;
+          color: #393e46; }
+        .panel__content .content__header-text .year {
+          font-size: 1.6rem;
+          color: #393e46; }
+        @media (max-width: 37.5em) {
+          .panel__content .content__header-text .institution {
+            font-size: 2.5rem; }
+          .panel__content .content__header-text .role {
+            font-size: 1.3rem; }
+          .panel__content .content__header-text .year {
+            font-size: 1.3rem; } }
+        @media (max-width: 20em) {
+          .panel__content .content__header-text .company {
+            font-size: 2.2rem; }
+          .panel__content .content__header-text .role {
+            font-size: 1.3rem; }
+          .panel__content .content__header-text .year {
+            font-size: 1.3rem; } }
+    .panel__content .content__detail {
+      font-family: "Alata", sans-serif;
+      letter-spacing: .07rem;
+      line-height: 1.5; }
+      .panel__content .content__detail-text {
+        font-size: 1.3rem; }
+      .panel__content .content__detail-list {
+        font-size: 1.5rem;
+        list-style: none; }
 
 .header__text-box {
   position: absolute;
@@ -153,7 +249,7 @@ $breakpoint arguement choices:
   text-align: center; }
   .bandung-education__panel {
     padding: 2rem;
-    width: 65%;
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.8);
     margin: 0 auto;
     box-shadow: 0.5rem 0.5rem 1rem rgba(34, 40, 49, 0.8);
@@ -172,7 +268,7 @@ $breakpoint arguement choices:
         padding: 1.5rem;
         width: 100%; } }
   .bandung-education__panel:not(:last-child) {
-    margin-bottom: 2rem; }
+    margin-bottom: 3rem; }
 
 .education-image {
   width: 15rem;
@@ -223,7 +319,14 @@ $breakpoint arguement choices:
 
 .section-tokyo {
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  padding: 4rem; }
+  @media (max-width: 37.5em) {
+    .section-tokyo {
+      padding: 2rem 0; } }
+  @media (max-width: 20em) {
+    .section-tokyo {
+      padding: 2rem 0; } }
 
 .bg-yuda::after {
   background: linear-gradient(to right bottom, rgba(63, 114, 175, 0.4), rgba(145, 109, 213, 0.4)), url(../img/hero.jpg);
@@ -344,7 +447,7 @@ h1, h2, h3, h4, h5 {
   font-family: "Exo 2", sans-serif; }
 
 p {
-  font-family: "PT Sans", sans-serif; }
+  font-family: "Alata", sans-serif; }
 
 a {
   text-decoration: none;
