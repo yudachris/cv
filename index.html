@@ -20,11 +20,16 @@
       <div class="loader-content"></div>
     </div>
   </div>
+
   <nav class="navigation">
-    <a class="navigation__menu" id="edu">Educational Background</a>
-    <a class="navigation__menu" id="exp">Work Experience</a>
-    <a class="navigation__menu" id="con">Contact Me</a>
+    <ul class="navigation__menu">
+      <li class="navigation__item" id="abt">About Me</li>
+      <li class="navigation__item" id="edu">Educational Background</li>
+      <li class="navigation__item" id="exp">Work Experience</li>
+      <li class="navigation__item" id="con">Contact Me</li>
+    </ul>
   </nav>
+
   <div class="wrapper">
     <!--
     Ideas*
@@ -42,7 +47,7 @@
       </div>
     </header>
 
-    <main class="section-about">
+    <main class="section-about" id="section-about">
       <div class="section-about__photo">
         <img src="img/yuda.jpg" alt="yuda-photo">
       </div>
@@ -50,117 +55,121 @@
         <h2>Hello. Good to see you!</h2>
       </div>
       <div class="section-about__text">
-        <p>My name is Yehuda Nathanael and I am a front-end web developer. I'm originally came from Bandung, Indonesia
-          and currently living and working in Tokyo, Japan.</p>
+        <p>My name is Yehuda Nathanael and I am looking for opportunities in web development career. I developed several
+          projects in my college years and also in my free time while working full-time as a IT Service Coordinator in
+          Tokyo, Japan. I am very passionate in creating things, especially those which utilize creative, logical, and critical thinking to solve problems.</p>
       </div>
     </main>
 
     <section class="section-bandung bg-bandung parallax" id="section-education">
       <div class="panel">
-	<div class="panel__title">
-	  <h2 class="heading-secondary">Educational Background</h2>
-	</div>
-	
-	<!-- BPK PENABUR -->
-	<div class="panel__content">
-	  <div class="content__header">
-		<div class="content__header-text">
-		  <div class="institution">
-			SMAK 2 BPK Penabur Bandung High School
-		  </div>
-		  <div class="role">
-			Social Sciences
-		  </div>
-		  <div class="year">
-			2019 - 2012
-		  </div>
-		</div>
-		<div class="content__header-image">
-		  <img src="img/bpkpenabur.jpg" alt="bpkpenabur-image">
-		  <span class="image-link"><a href="https://smak2bpk.penabur.sch.id/" target="_blank">Go to Website</a></span>
-		</div>
-	  </div>
-	  <div class="content__detail">
-		<p class="content__detail-text">
-		  A private Christian school located in Bandung, Indonesia. Majored in
-          Social Sciences.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-		  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-		  Pellentesque nec nam aliquam sem et tortor consequat id. 
-		  Dapibus ultrices in iaculis nunc sed augue lacus viverra. 
-		  Adipiscing elit ut aliquam purus. Fringilla phasellus faucibus scelerisque eleifend donec. 
-		  Tincidunt dui ut ornare lectus sit amet est. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. 
-		  Vestibulum lectus mauris ultrices eros. Consectetur adipiscing elit pellentesque habitant. 
-		  Interdum varius sit amet mattis vulputate enim nulla aliquet. 
-		  Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
-		</p>
-	  </div>
-	</div>
-	
-	<!-- ITHB -->
-	<div class="panel__content">
-	  <div class="content__header">
-		<div class="content__header-text">
-		  <div class="institution">
-			Institut Teknologi Harapan Bangsa (ITHB)
-		  </div>
-		  <div class="role">
-			Information Systems
-		  </div>
-		  <div class="year">
-			2012 - 2016
-		  </div>
-		</div>
-		<div class="content__header-image">
-		  <img src="img/ithb.jpg" alt="ithb-image">
-		  <span class="image-link"><a href="https://ithb.ac.id/" target="_blank">Go to Website</a></span>
-		</div>
-	  </div>
-	  <div class="content__detail">
-		<p class="content__detail-text">
-		  Majored in Information Systems with focus on supply chain management and
-		  graduated with GPA of 3.43. Developed a web-based supply chain simulation game for my final project
-		  to facilitate learning process of university students in ITHB as well as supply chain traning
-		  participants. See the code on my <a href="https://github.com/yudachris/onlinesupplychain"
-			target="_blank">GitHub</a> Page.
-		</p>
-	  </div>
-	</div>
-	
-	<!-- AKI NO SORA -->
-	<div class="panel__content">
-	  <div class="content__header">
-		<div class="content__header-text">
-		  <div class="institution">
-			Aki no Sora Japanese Language Institute
-		  </div>
-		  <div class="role">
-			JLPT N2 Program
-		  </div>
-		  <div class="year">
-			2015 - 2016
-		  </div>
-		</div>
-		<div class="content__header-image">
-		  <img src="img/akinosora.jpg" alt="akinosora-image">
-		  <span class="image-link"><a href="https://akinosora.co/" target="_blank">Go to Website</a></span>
-		</div>
-	  </div>
-	  <div class="content__detail">
-		<p class="content__detail-text">
-		  A private Christian school located in Bandung, Indonesia. Majored in
-          Social Sciences.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-		  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-		  Pellentesque nec nam aliquam sem et tortor consequat id. 
-		  Dapibus ultrices in iaculis nunc sed augue lacus viverra. 
-		  Adipiscing elit ut aliquam purus. Fringilla phasellus faucibus scelerisque eleifend donec. 
-		  Tincidunt dui ut ornare lectus sit amet est. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. 
-		  Vestibulum lectus mauris ultrices eros. Consectetur adipiscing elit pellentesque habitant. 
-		  Interdum varius sit amet mattis vulputate enim nulla aliquet. 
-		  Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
-		</p>
-	  </div>
-	</div>
-</div>
+        <div class="panel__title">
+          <h2 class="heading-secondary">Educational Background</h2>
+        </div>
+
+        <!-- ITHB -->
+        <div class="panel__content">
+          <div class="content__header">
+            <div class="content__header-text">
+              <div class="institution">
+                Institut Teknologi Harapan Bangsa (ITHB)
+              </div>
+              <div class="role">
+                Information Systems
+              </div>
+              <div class="year">
+                2012 - 2016
+              </div>
+            </div>
+            <div class="content__header-image">
+              <img src="img/ithb.jpg" alt="ithb-image">
+              <span class="image-link"><a href="https://ithb.ac.id/" target="_blank">Go to Website</a></span>
+            </div>
+          </div>
+          <div class="content__detail">
+            <p class="content__detail-text">
+              Majored in Information Systems with focus on supply chain management and
+              graduated with GPA of 3.43. Developed a web-based supply chain simulation game for my final project
+              to facilitate learning process of university students in ITHB as well as supply chain traning
+              participants. See the code on my <a href="https://github.com/yudachris/onlinesupplychain"
+                target="_blank">GitHub</a> Page.
+            </p>
+          </div>
+        </div>
+
+        <!-- AKI NO SORA -->
+        <div class="panel__content">
+          <div class="content__header">
+            <div class="content__header-text">
+              <div class="institution">
+                Aki no Sora Japanese Language Institute
+              </div>
+              <div class="role">
+                JLPT N2 Program
+              </div>
+              <div class="year">
+                2015 - 2016
+              </div>
+            </div>
+            <div class="content__header-image">
+              <img src="img/akinosora.jpg" alt="akinosora-image">
+              <span class="image-link"><a href="https://akinosora.co/" target="_blank">Go to Website</a></span>
+            </div>
+          </div>
+          <div class="content__detail">
+            <p class="content__detail-text">
+              A private Christian school located in Bandung, Indonesia. Majored in
+              Social Sciences.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Pellentesque nec nam aliquam sem et tortor consequat id.
+              Dapibus ultrices in iaculis nunc sed augue lacus viverra.
+              Adipiscing elit ut aliquam purus. Fringilla phasellus faucibus scelerisque eleifend donec.
+              Tincidunt dui ut ornare lectus sit amet est. Dolor sit amet consectetur adipiscing elit pellentesque
+              habitant morbi.
+              Vestibulum lectus mauris ultrices eros. Consectetur adipiscing elit pellentesque habitant.
+              Interdum varius sit amet mattis vulputate enim nulla aliquet.
+              Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+            </p>
+          </div>
+        </div>
+
+        <!-- BPK PENABUR -->
+        <div class="panel__content">
+          <div class="content__header">
+            <div class="content__header-text">
+              <div class="institution">
+                SMAK 2 BPK Penabur Bandung High School
+              </div>
+              <div class="role">
+                Social Sciences
+              </div>
+              <div class="year">
+                2019 - 2012
+              </div>
+            </div>
+            <div class="content__header-image">
+              <img src="img/bpkpenabur.jpg" alt="bpkpenabur-image">
+              <span class="image-link"><a href="https://smak2bpk.penabur.sch.id/" target="_blank">Go to
+                  Website</a></span>
+            </div>
+          </div>
+          <div class="content__detail">
+            <p class="content__detail-text">
+              A private Christian school located in Bandung, Indonesia. Majored in
+              Social Sciences.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Pellentesque nec nam aliquam sem et tortor consequat id.
+              Dapibus ultrices in iaculis nunc sed augue lacus viverra.
+              Adipiscing elit ut aliquam purus. Fringilla phasellus faucibus scelerisque eleifend donec.
+              Tincidunt dui ut ornare lectus sit amet est. Dolor sit amet consectetur adipiscing elit pellentesque
+              habitant morbi.
+              Vestibulum lectus mauris ultrices eros. Consectetur adipiscing elit pellentesque habitant.
+              Interdum varius sit amet mattis vulputate enim nulla aliquet.
+              Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section-transition">
@@ -187,12 +196,20 @@
             </div>
             <div class="content__header-image">
               <img src="img/isfnet.png" alt="isfnet-image">
-              <span class="image-link"><a href="https://www.isfnet.co.jp/index.html" target="_blank">Go to Website</a></span>
+              <span class="image-link"><a href="https://www.isfnet.co.jp/index.html" target="_blank">Go to
+                  Website</a></span>
             </div>
           </div>
           <div class="content__detail">
             <p class="content__detail-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At volutpat diam ut venenatis tellus. Neque ornare aenean euismod elementum nisi. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Feugiat in fermentum posuere urna nec. Blandit cursus risus at ultrices. Rhoncus mattis rhoncus urna neque viverra justo. Purus non enim praesent elementum facilisis leo. Libero enim sed faucibus turpis in eu mi bibendum neque. Ornare arcu odio ut sem nulla pharetra diam sit amet. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Sit amet risus nullam eget felis eget nunc. Scelerisque varius morbi enim nunc faucibus a pellentesque. Neque aliquam vestibulum morbi blandit cursus risus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. At volutpat diam ut venenatis tellus. Neque ornare aenean euismod elementum nisi.
+              Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Feugiat in fermentum posuere
+              urna nec. Blandit cursus risus at ultrices. Rhoncus mattis rhoncus urna neque viverra justo. Purus non
+              enim praesent elementum facilisis leo. Libero enim sed faucibus turpis in eu mi bibendum neque. Ornare
+              arcu odio ut sem nulla pharetra diam sit amet. Diam volutpat commodo sed egestas egestas fringilla
+              phasellus faucibus scelerisque. Sit amet risus nullam eget felis eget nunc. Scelerisque varius morbi enim
+              nunc faucibus a pellentesque. Neque aliquam vestibulum morbi blandit cursus risus.
             </p>
             <div class="content__detail-list">
             </div>
@@ -213,12 +230,19 @@
             </div>
             <div class="content__header-image">
               <img src="img/ithb.jpg" alt="cosis-image">
-              <span class="image-link"><a href="https://ithb.ac.id/en/center-for-supply-chain-information-system/" target="_blank">Go to Website</a></span>
+              <span class="image-link"><a href="https://ithb.ac.id/en/center-for-supply-chain-information-system/"
+                  target="_blank">Go to Website</a></span>
             </div>
           </div>
           <div class="content__detail">
             <p class="content__detail-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque nec nam aliquam sem et tortor consequat id. Dapibus ultrices in iaculis nunc sed augue lacus viverra. Adipiscing elit ut aliquam purus. Fringilla phasellus faucibus scelerisque eleifend donec. Tincidunt dui ut ornare lectus sit amet est. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Vestibulum lectus mauris ultrices eros. Consectetur adipiscing elit pellentesque habitant. Interdum varius sit amet mattis vulputate enim nulla aliquet. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Pellentesque nec nam aliquam sem et tortor consequat id. Dapibus ultrices in iaculis
+              nunc sed augue lacus viverra. Adipiscing elit ut aliquam purus. Fringilla phasellus faucibus scelerisque
+              eleifend donec. Tincidunt dui ut ornare lectus sit amet est. Dolor sit amet consectetur adipiscing elit
+              pellentesque habitant morbi. Vestibulum lectus mauris ultrices eros. Consectetur adipiscing elit
+              pellentesque habitant. Interdum varius sit amet mattis vulputate enim nulla aliquet. Elementum nisi quis
+              eleifend quam adipiscing vitae proin sagittis nisl.
             </p>
             <ul class="content__detail-list">
               <li>Jobdesc 1</li>
