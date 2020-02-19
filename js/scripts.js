@@ -60,3 +60,12 @@ $(".wrapper").on('scroll', function(){
     
 });
 
+$(window).resize(function(){
+
+    var screenWidth = $(".wrapper").width();
+
+    if(screenWidth <= 600){
+        //add class for animation. Animation will applied to navigation-mobile__menu class.
+    }
+
+});
