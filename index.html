@@ -21,12 +21,21 @@
     </div>
   </div>
 
-  <nav class="navigation">
+  <nav class="navigation"> browser
     <ul class="navigation__menu">
       <li class="navigation__item" id="abt">About Me</li>
       <li class="navigation__item" id="edu">Educational Background</li>
       <li class="navigation__item" id="exp">Work Experience</li>
       <li class="navigation__item" id="con">Contact Me</li>
+    </ul>
+  </nav>
+
+  <nav class="navigation-mobile"> mobile
+    <ul class="navigation-mobile__menu">
+      <li class="navigation-mobile__item" id="abt">About Me</li>
+      <li class="navigation-mobile__item" id="edu">Educational Background</li>
+      <li class="navigation-mobile__item" id="exp">Work Experience</li>
+      <li class="navigation-mobile__item" id="con">Contact Me</li>
     </ul>
   </nav>
 
@@ -260,9 +269,9 @@
     </footer>
   </div>
   <script>
-    $(window).on("load", function () {
+   $(window).on("load", function () {
       $(".loader-wrapper").fadeOut("slow");
-    });
+   });
   </script>
   <script src="js/scripts.js"></script>
 </body>
