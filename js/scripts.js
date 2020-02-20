@@ -48,24 +48,28 @@ function scrollToSection (buttonId) {
         default:
             alert("Something impossible just happenned.");
     }
+
+    if( $(".wrapper").width() <= 600){
+        toggleMobileMenu();
+    }
+    
 }
 
 //SCROLLING FUNCTION
-$(".wrapper").on('scroll', function(){
+$(".wrapper").on('scroll', () => {
 
     var wrapperScroll = $(".wrapper").scrollTop();
     var headerHeight = $(".header").height();
     
-    $(".navigation").toggleClass("hide", wrapperScroll >= headerHeight);
+    $(".navigation").toggleClass("mini", wrapperScroll >= headerHeight);
     
 });
 
-$(window).resize(function(){
 
-    var screenWidth = $(".wrapper").width();
+$("#nav-button").on("click", () => {
+    toggleMobileMenu();
+})
 
-    if(screenWidth <= 600){
-        //add class for animation. Animation will applied to navigation-mobile__menu class.
-    }
-
-});
+let toggleMobileMenu = () => {
+    $(".navigation-mobile__menu").toggleClass("show");
+}

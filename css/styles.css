@@ -18,6 +18,10 @@ $breakpoint arguement choices:
 @import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
 .navigation {
+  display: inline-block;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 100vw;
   position: absolute;
   padding: 2rem 4rem;
   top: 0;
@@ -44,9 +48,9 @@ $breakpoint arguement choices:
       text-shadow: 0.1rem 0.1rem 0.3rem rgba(219, 226, 239, 0.8);
       transform: translateY(-2.5px);
       -webkit-transform: translateY(-2.5px); }
-  .navigation.hide {
-    transform: translateY(-100%);
-    -webkit-transform: translateY(-100%); }
+  .navigation.mini {
+    padding: 1rem 2rem;
+    background-color: rgba(57, 62, 70, 0.4); }
   @media (max-width: 37.5em) {
     .navigation {
       display: none; } }
@@ -55,19 +59,27 @@ $breakpoint arguement choices:
       display: none; } }
   .navigation-mobile {
     position: absolute;
-    margin: 2rem 5rem;
+    margin: 0 5rem;
     font-size: 2.4rem;
     top: 10rem;
     left: 0;
     right: 0;
-    transition: all .3s;
-    -webkit-transition: all .3s;
     z-index: 111;
-    display: none;
-    text-align: right; }
+    text-align: right;
+    overflow: hidden;
+    display: none; }
     .navigation-mobile__menu {
-      display: inline-block; }
+      display: inline-block;
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transform: translateX(150%);
+      opacity: 0;
+      margin-top: 1rem; }
+      .navigation-mobile__menu.show {
+        transform: translateX(0);
+        opacity: 1; }
     .navigation-mobile__item {
+      display: block;
       list-style: none;
       font-family: "Exo 2", sans-serif;
       font-weight: 400;
@@ -98,7 +110,12 @@ $breakpoint arguement choices:
       z-index: 2000;
       box-shadow: 0 1rem 3rem rgba(34, 40, 49, 0.1);
       text-align: center;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: transform .2s;
+      -webkit-transition: transform .2s; }
+      .navigation-mobile__button:active {
+        transform: translateY(0.2rem);
+        -webkit-transform: translateY(0.2rem); }
     .navigation-mobile__icon {
       position: relative;
       margin-top: 3rem;
@@ -454,7 +471,7 @@ $breakpoint arguement choices:
   background-position: center; }
 
 .footer {
-  height: 35vh;
+  height: 45vh;
   background-color: #112d4e; }
 
 @keyframes landing-text-top {
