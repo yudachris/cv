@@ -45,7 +45,8 @@ $breakpoint arguement choices:
       transform: translateY(-2.5px);
       -webkit-transform: translateY(-2.5px); }
   .navigation.hide {
-    transform: translateY(-100%); }
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%); }
   @media (max-width: 37.5em) {
     .navigation {
       display: none; } }
@@ -371,10 +372,11 @@ $breakpoint arguement choices:
   box-shadow: 0.25rem 0.25rem 1rem rgba(34, 40, 49, 0.5);
   transition: all .2s ease;
   -webkit-transition: all .2s ease; }
-  .section-about__photo img {
+  .section-about__photo > img {
     width: 100%;
     height: 100%;
     transition: all .2s;
+    border-radius: 50%;
     -webkit-transition: all .2s;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
