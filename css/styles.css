@@ -149,18 +149,6 @@ $breakpoint arguement choices:
     .navigation-mobile__button:hover .navigation-mobile__icon::after {
       top: 1rem; }
 
-.parallax::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  transform: translateZ(-1px) scale(1.55);
-  -webkit-transform: translateZ(-1px) scale(1.55);
-  -moz-transform: translateZ(-1px) scale(1.55); }
-
 .loader-wrapper {
   height: 100vh;
   background-color: #112d4e;
@@ -413,6 +401,38 @@ $breakpoint arguement choices:
 .section-about__text {
   margin: 4rem; }
 
+.section-about__techstack {
+  width: 100%; }
+  .section-about__techstack .techstack__text {
+    padding: 3rem; }
+  .section-about__techstack .techstack__techs {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem; }
+    .section-about__techstack .techstack__techs-icon {
+      display: inline-block;
+      width: 100%;
+      font-size: 12rem;
+      color: #112d4e;
+      transition: transform .3s; }
+      .section-about__techstack .techstack__techs-icon:hover {
+        transform: scale(1.1); }
+      @media (max-width: 37.5em) {
+        .section-about__techstack .techstack__techs-icon {
+          font-size: 13rem;
+          margin: 1rem 0; } }
+      @media (max-width: 20em) {
+        .section-about__techstack .techstack__techs-icon {
+          font-size: 12rem;
+          margin: 1rem 0; } }
+    @media (max-width: 37.5em) {
+      .section-about__techstack .techstack__techs {
+        flex-direction: column; } }
+    @media (max-width: 20em) {
+      .section-about__techstack .techstack__techs {
+        flex-direction: column; } }
+
 .header {
   height: 100vh;
   position: relative; }
@@ -422,6 +442,12 @@ $breakpoint arguement choices:
   background-color: #fff;
   padding: 15rem 20rem;
   text-align: center; }
+  @media (max-width: 85.375em) {
+    .section-about {
+      padding: 15rem 10rem; } }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 15rem 7rem; } }
   @media (max-width: 37.5em) {
     .section-about {
       padding: 15rem 2rem; } }
@@ -455,23 +481,26 @@ $breakpoint arguement choices:
     .section-tokyo {
       padding: 10rem 0; } }
 
-.bg-yuda::after {
+.bg-yuda {
   background: linear-gradient(to right bottom, rgba(63, 114, 175, 0.4), rgba(145, 109, 213, 0.4)), url(../img/hero.jpg);
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+  background-attachment: fixed; }
 
-.bg-tokyo::after {
+.bg-tokyo {
   background: linear-gradient(to right bottom, rgba(63, 114, 175, 0.4), rgba(145, 109, 213, 0.4)), url(../img/tokyo.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
 
-.bg-bandung::after {
+.bg-bandung {
   background: linear-gradient(to right bottom, rgba(63, 114, 175, 0.4), rgba(145, 109, 213, 0.4)), url(../img/bandung.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
 
 .footer {
-  height: 45vh;
+  height: 35vh;
   background-color: #112d4e; }
 
 @keyframes landing-text-top {
